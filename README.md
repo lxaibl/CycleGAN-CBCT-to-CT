@@ -1,5 +1,6 @@
 # CycleGAN-CBCT-to-CT
-Convert CBCT images to CT like images
+Convert CBCT images to CT like images.
+
 This is 2D CycleGAN model.
 Before training, resampling your CBCT's and CT's voxel spacing to the same voxel spacing. For our project, we resampled CT's voxel spacing to CBCT's voxel spacing, which is 0.51mm*0.51mm*1.99mm and then corpped to 512*512 dimensions. 
 Input image size is 512*512 for both CBCT and CT images, and input image/data is in HU unit. Data normalization is done in train_cyclegan_patchD.py.
